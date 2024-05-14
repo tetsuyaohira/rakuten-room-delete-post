@@ -1,0 +1,81 @@
+{
+  "id": "aa86ad27-e9d1-4166-a55c-853bd17f44ed",
+  "version": "2.0",
+  "name": "rakuten-room-delete-post",
+  "url": "https://room.rakuten.co.jp",
+  "tests": [{
+    "id": "bfe98731-f4f3-48f8-ade1-c5b868d13de8",
+    "name": "delete-post",
+    "commands": [{
+      "id": "a0336b34-d48c-4c9a-92ee-0c29b5cb0acc",
+      "comment": "",
+      "command": "open",
+      "target": "/room_7623594747/items",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e496e950-5791-41b1-9765-3ba095f71030",
+      "comment": "",
+      "command": "store",
+      "target": "200",
+      "targets": [],
+      "value": "Var"
+    }, {
+      "id": "6b70b5a6-e681-4e77-814d-bee25e903126",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b8c8916-04ae-44d0-8992-56d92f852c14",
+      "comment": "",
+      "command": "click",
+      "target": "css=.masonry-grid-column--gwvDr:nth-child(1) > .vertical-space--1hCpn:nth-child(1) .image--3z5RH",
+      "targets": [
+        ["css=.masonry-grid-column--gwvDr:nth-child(1) > .vertical-space--1hCpn:nth-child(1) .image--3z5RH", "css:finder"],
+        ["xpath=//img[contains(@src,'https://shop.r10s.jp/carat/cabinet/chain01/nbk5014s.jpg?thum=133&fitin=200:600')]", "xpath:img"],
+        ["xpath=//div[@id='root']/div[5]/div/div/div[2]/div[2]/div/div/div/div/div/div/div/a/div/img", "xpath:idRelative"],
+        ["xpath=//a/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7bf1dbb-9e70-4dd3-9b6c-3119ed8b328b",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dfe3b236-995a-4321-99c6-ddcad8feed6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-in-page--27esk:nth-child(1) > .button--3SNaj",
+      "targets": [
+        ["css=.button-in-page--27esk:nth-child(1) > .button--3SNaj", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[4]/div[2]/div/div/div[2]/div/div[13]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[13]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'削除')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b534e0b1-fed9-4306-bcb1-db55718931fd",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${Var}===\"200\"",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5e51f58b-12bb-42f9-86bf-1a707e61f899",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bfe98731-f4f3-48f8-ade1-c5b868d13de8"]
+  }],
+  "urls": ["https://room.rakuten.co.jp/"],
+  "plugins": []
+}
