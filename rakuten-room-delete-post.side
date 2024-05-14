@@ -10,16 +10,9 @@
       "id": "a0336b34-d48c-4c9a-92ee-0c29b5cb0acc",
       "comment": "",
       "command": "open",
-      "target": "/room_7623594747/items",
+      "target": "/room_[your_room_id]/items",
       "targets": [],
       "value": ""
-    }, {
-      "id": "e496e950-5791-41b1-9765-3ba095f71030",
-      "comment": "",
-      "command": "store",
-      "target": "200",
-      "targets": [],
-      "value": "Var"
     }, {
       "id": "6b70b5a6-e681-4e77-814d-bee25e903126",
       "comment": "",
@@ -63,7 +56,7 @@
       "id": "b534e0b1-fed9-4306-bcb1-db55718931fd",
       "comment": "",
       "command": "repeatIf",
-      "target": "${Var}===\"200\"",
+      "target": "true",
       "targets": [],
       "value": ""
     }]
